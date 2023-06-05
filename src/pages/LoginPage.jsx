@@ -24,7 +24,7 @@ function LoginPage() {
         <h1 className="header">
           Open the D
           <MdDoorSliding />
-          r to discussion
+          r to discussions
         </h1>
       </div>
       <LoginInput login={onLogin} />
