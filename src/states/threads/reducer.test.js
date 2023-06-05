@@ -10,7 +10,7 @@
 import { describe, expect, it } from 'vitest';
 import threadReducer from './reducer';
 
-describe('thread reducers function', () => {
+describe('thread reducer function', () => {
   it('should return the initial state when given by unknown action', () => {
     // arrange
     const initialState = [];
