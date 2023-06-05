@@ -4,15 +4,6 @@ import PropTypes from 'prop-types';
 function ThreadCommentInput({ addComment }) {
   const [content, setContent] = useState('');
 
-  function createComment() {
-    if (content === '') {
-      alert('Please fill the comment field');
-    } else {
-      addComment(content.trim());
-      setContent('');
-    }
-  }
-
   function handleContentInput({ target }) {
     setContent(target.innerHTML);
   }
@@ -31,10 +22,11 @@ function ThreadCommentInput({ addComment }) {
           id="comment-content"
           className="comment-input__body"
           data-placeholder="write comment here ..."
+          data-testid="commentEditTest"
           value={content}
           onInput={handleContentInput}
         />
-        <button type="submit" onClick={createComment}>
+        <button type="submit" onClick={() => addComment({ content })}>
           Send
         </button>
       </form>

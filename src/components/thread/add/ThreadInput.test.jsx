@@ -61,7 +61,7 @@ describe('Thread input component', () => {
     expect(contentInput.textContent).toBe('contentTester');
   });
 
-  it('should call login function when add button is clicked', async () => {
+  it('should call create thread function when add button is clicked', async () => {
     // arrange
     const mockAdd = vi.fn();
     render(<ThreadInput addThread={mockAdd} />);

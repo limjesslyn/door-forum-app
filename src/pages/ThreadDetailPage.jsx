@@ -37,8 +37,12 @@ function ThreadDetailPage() {
     dispatch(asyncReceiveThreadDetail(id));
   }, [id, dispatch]);
 
-  const onAddComment = (content) => {
-    dispatch(asyncAddComment({ id, content }));
+  const onAddComment = ({ content }) => {
+    if (content === '') {
+      alert('Please fill the comment field');
+    } else {
+      dispatch(asyncAddComment({ id, content }));
+    }
   };
 
   if (!detailThread) {
