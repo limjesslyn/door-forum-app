@@ -1,5 +1,7 @@
-###React Expert Study Case
+React Expert Study Case
 ---
+
+A forum to discuss everything
 
 > _Automation Testing_
 
@@ -21,6 +23,3 @@ components:
 - registerInput
 - ThreadInput
 - ThreadCommentInput
-
-> _Other React Ecosystem_
-- eslint-plugin-react
