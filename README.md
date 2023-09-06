@@ -1,7 +1,7 @@
 React Expert Study Case
 ---
 
-A forum to discuss everything
+An application for sharing thoughts and engaging in discussions through threads and comments. To access all features, users need to be logged in. The development utilized ReactJS and the API from Dicoding Indonesia
 
 > _Automation Testing_
 
